@@ -1,0 +1,14 @@
+@mixin calendar-day {
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  margin: 0 0 1px 1px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #000;
+  cursor: pointer;
+}
