@@ -126,6 +126,20 @@ div {
     background-color: #eee;
     border: 1px solid #000;
     cursor: pointer; }
+  .calendar-31 div:nth-child(-n + 31) {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    margin: 0 0 1px 1px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #000;
+    cursor: pointer; }
   .calendar-mon div:first-child {
     margin-left: 1px; }
   .calendar-tue div:first-child {
@@ -138,6 +152,8 @@ div {
     margin-left: 405px; }
   .calendar-sat div:first-child {
     margin-left: 506px; }
+  .calendar-sun div:first-child {
+    margin-left: 607px; }
   .calendar div:nth-child(1)::after {
     content: "1"; }
   .calendar div:nth-child(2)::after {
@@ -198,6 +214,8 @@ div {
     content: "29"; }
   .calendar div:nth-child(30)::after {
     content: "30"; }
+  .calendar div:nth-child(31)::after {
+    content: "31"; }
   .calendar div:hover {
     background-color: #ffc0cb;
     -webkit-transform: translateY(-20px) scale(1.08);
