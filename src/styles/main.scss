@@ -16,19 +16,19 @@ div {
   width: 710px;
   margin: 150px auto;
 
-  @for $i from 28 to 31 {
+  @for $i from 28 through 31 {
     &-#{$i} div:nth-child(-n + #{$i}) {
       @include calendar-day;
     }
   }
 
-  @for $i from 1 through 6 {
+  @for $i from 1 through 7 {
     &-#{nth($days, $i)} div:first-child {
       margin-left: #{$i * 100 + $i - 100}px;
     }
   }
 
-  @for $i from 1 to 31 {
+  @for $i from 1 through 31 {
     div:nth-child(#{$i})::after {
       content: "#{$i}";
     }
